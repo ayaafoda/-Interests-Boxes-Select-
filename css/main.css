@@ -8,7 +8,7 @@
   font-family: sans-serif;
 }
 .container {
-  width: 900px; 
+    max-width: 900px;
       margin: 20px auto;
 }
 .head h1 {
