@@ -1,0 +1,180 @@
+:root {
+  --main-purple-color: #5c48f1;
+  --elements-background-color: #eeecfd;
+  --element-border-color: #e0e0e1;
+}
+
+* {
+  font-family: sans-serif;
+}
+.container {
+  width: 900px; 
+      margin: 20px auto;
+}
+.head h1 {
+  background-color: var(--elements-background-color);
+  color: var(--main-purple-color);
+  text-align: center;
+  padding: 10px 15px;
+  text-transform: capitalize;
+}
+
+.dad {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.dad .check {
+  position: relative;
+}
+
+.dad .check input {
+  display: none;
+}
+.dad .check input:checked + label:nth-of-type(1) {
+  background-color: rgb(92 72 241/ 10%);
+  border: 2px solid var(--main-purple-color);
+}
+.dad .check label:nth-of-type(1) {
+  position: relative;
+  border: 2px solid var(--element-border-color);
+  padding: 20px;
+  box-shadow: 0px 0px 0px 0px rgb(31, 31, 31);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.dad .check:nth-of-type(1) label:nth-of-type(1)::before {
+  content: "\f16d";
+  font-family: "fontawesome";
+  position: relative;
+  display: block;
+  color: var(--main-purple-color);
+  font-size: 50px;
+  cursor: pointer;
+}
+.dad .check:nth-of-type(2) label:nth-of-type(1)::before {
+  content: "\f0c2";
+  font-family: "fontawesome";
+  position: relative;
+  display: block;
+  color: var(--main-purple-color);
+  font-size: 50px;
+  cursor: pointer;
+}
+.dad .check:nth-of-type(3) label:nth-of-type(1)::before {
+  content: "\f06b";
+  font-family: "fontawesome";
+  position: relative;
+  display: block;
+  color: var(--main-purple-color);
+  font-size: 50px;
+  cursor: pointer;
+}
+.dad .check:nth-of-type(4) label:nth-of-type(1)::before {
+  content: "\f395";
+  font-family: "fontawesome";
+  position: relative;
+  display: block;
+  color: var(--main-purple-color);
+  font-size: 50px;
+  cursor: pointer;
+}
+.dad .check:nth-of-type(5) label:nth-of-type(1)::before {
+  content: "\f023";
+  font-family: "fontawesome";
+  position: relative;
+  display: block;
+  color: var(--main-purple-color);
+  font-size: 50px;
+  cursor: pointer;
+}
+.dad .check:nth-of-type(6) label:nth-of-type(1)::before {
+  content: "\f06e";
+  font-family: "fontawesome";
+  position: relative;
+  display: block;
+  color: var(--main-purple-color);
+  font-size: 50px;
+  cursor: pointer;
+}
+.dad .check:nth-of-type(7) label:nth-of-type(1)::before {
+  content: "\f06d";
+  font-family: "fontawesome";
+  position: relative;
+  display: block;
+  color: var(--main-purple-color);
+  font-size: 50px;
+  cursor: pointer;
+}
+.dad .check:nth-of-type(8) label:nth-of-type(1)::before {
+  content: "\f0d1";
+  font-family: "fontawesome";
+  position: relative;
+  display: block;
+  color: var(--main-purple-color);
+  font-size: 50px;
+  cursor: pointer;
+}
+.dad .check label:nth-of-type(2) {
+    /* position: relative; */
+        position: absolute;
+          height: 20px;
+          width: 20px;
+          border: 2px solid var(--element-border-color);
+          border-radius: 4px;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          -o-border-radius: 4px;
+          top: 10px;
+          cursor: pointer;
+          left: 10px;
+}
+.dad .check:hover label:nth-of-type(2)::after {
+  /* border: 2px solid var(--main-purple-color); */
+        background-color: rgb(92 72 241/ 20%);
+}
+.dad .check:hover label:nth-of-type(2) {
+        border-color: var(--main-purple-color);
+}
+.dad .check label:nth-of-type(2)::after {
+  content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    /* border: 2px solid var(--element-border-color); */
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    top: 50%;
+      cursor: pointer;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition-duration: 0.3s;
+}
+.dad .check input:checked~label:nth-of-type(2)::after {
+  background-color: var(--main-purple-color);
+}
+.dad .check input:checked ~label:nth-of-type(2) {
+  /* background-color: rgb(92 72 241/ 10%); */
+  border: 2px solid var(--main-purple-color);
+}
